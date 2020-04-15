@@ -25,7 +25,7 @@ try:
     sleep(4)
 
     confirm_host_button = browser.find_element_by_xpath('//*[@id="confirmHostForm"]/button')
-    confirm_host_button.click()
+    browser.execute_script("arguments[0].click();", confirm_host_button)
 
     sleep(4)
 
